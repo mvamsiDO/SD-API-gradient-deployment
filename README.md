@@ -60,9 +60,11 @@ We can use this to verify if the deployment was successfull.
 - Be sure to change the `url` field with your own endpoint. Here is a [tutorial on how to import a postman collection](https://www.geeksforgeeks.org/how-to-import-export-collections-in-postman/#1-how-to-importexport-collections-using-the-postman-dashboard)
 ```
 <!-- Request  -->
+<!-- NOTE: The very first request to the server will be slow, as the model is downloaded and loaded into the GPU  -->
+<!-- NOTE: We observe that, it takes a minute or so to generate an image -->
 {
   "modelInputs": {
-    "prompt": "Soft pink roses, white Chinese peony, tiny apple blossom flowers, eucalyptus leaves, twigs of cranberries, twigs of copper pepper berries all arrangement into a cute beautiful flowers arrangement on a pink nickel mug. The mug is sitting on a thick white book with golden cover image design. Sunny, bright image. Ad copy, huge copy space on top of the image, negative space, hd, 8k, blurry dreamy background, beautiful pictures. Product",
+    "prompt": "A highly photorealistic image of a off road race track, complete with precise replicas of the world’s most iconic heavy noun, captured at the moment of a sharp turn, with smoke and sparks flying from under the wheels and the noun drifting around the bend. The image captures the excitement of the moment, with happy and noisy fans cheering and waving in the background. (The image is depicted at dusk, with the headlights",
     "num_inference_steps": 50,
     "guidance_scale": 7.5,
     "width": 512,
@@ -107,10 +109,11 @@ We can use this to verify if the deployment was successfull.
 ![Settings](./docs/17_disable_deployment.png)
 
 
-
-
-
 ### CLI Steps 
 - Ref1: https://docs.digitalocean.com/products/paperspace/deployments/how-to/create-deployments/
 - Ref2: https://docs.digitalocean.com/reference/paperspace/pspace/api-reference/#tag/Deployments
 
+
+## TO DO:
+1. Build a docker image with model loaded to avoid cold start.
+2. See if there are some low hanging optimisations in config that can speed up inference.  
