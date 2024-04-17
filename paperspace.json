@@ -1,0 +1,19 @@
+{
+  "apiVersion": "v1",
+  "env": [
+    {
+      "name": "HF_AUTH_TOKEN",
+      "value": "<HuggingFace read access token>"
+    }
+  ],
+  "image": "gadicc/diffusers-api",
+  "name": "sdxl-t1",
+  "enabled": true,
+  "resources": {
+    "machineType": "A4000",
+    "replicas": 1,
+    "ports": [
+      8000
+    ]
+  }
+}
