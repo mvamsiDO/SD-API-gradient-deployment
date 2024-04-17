@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "90d3b016-0933-423a-9daf-798cb977ef8d",
+		"name": "sdxl_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33246779"
+	},
+	"item": [
+		{
+			"name": "prompt2",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"modelInputs\": {\n    \"prompt\": \"Soft pink roses, white Chinese peony, tiny apple blossom flowers, eucalyptus leaves, twigs of cranberries, twigs of copper pepper berries all arrangement into a cute beautiful flowers arrangement on a pink nickel mug. The mug is sitting on a thick white book with golden cover image design. Sunny, bright image. Ad copy, huge copy space on top of the image, negative space, hd, 8k, blurry dreamy background, beautiful pictures. Product\",\n    \"num_inference_steps\": 50,\n    \"guidance_scale\": 7.5,\n    \"width\": 512,\n    \"height\": 512,\n    \"seed\": 3239022079\n  },\n  \"callInputs\": {\n    // You can leave these out to use the default\n    \"MODEL_ID\": \"stabilityai/stable-diffusion-xl-base-1.0\",\n    // \"PIPELINE\": \"StableDiffusionXLPipeline\",\n    \"SCHEDULER\": \"EulerAncestralDiscreteScheduler\",\n    \"safety_checker\": true\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://<>.paperspacegradient.com/",
+					"protocol": "https",
+					"host": [
+						"<>",
+						"paperspacegradient",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prompt1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"modelInputs\": {\n    \"prompt\": \"A highly photorealistic image of a off road race track, complete with precise replicas of the world’s most iconic heavy noun, captured at the moment of a sharp turn, with smoke and sparks flying from under the wheels and the noun drifting around the bend. The image captures the excitement of the moment, with happy and noisy fans cheering and waving in the background. (The image is depicted at dusk, with the headlights\",\n    \"num_inference_steps\": 50,\n    \"guidance_scale\": 7.5,\n    \"width\": 512,\n    \"height\": 512,\n    \"seed\": 3239022079\n  },\n  \"callInputs\": {\n    // You can leave these out to use the default\n    \"MODEL_ID\": \"stabilityai/stable-diffusion-xl-base-1.0\",\n    // \"PIPELINE\": \"StableDiffusionXLPipeline\",\n    \"SCHEDULER\": \"EulerAncestralDiscreteScheduler\",\n    \"safety_checker\": true\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://<>.paperspacegradient.com/",
+					"protocol": "https",
+					"host": [
+						"<>",
+						"paperspacegradient",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

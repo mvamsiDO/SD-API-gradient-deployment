@@ -56,6 +56,8 @@ We can use this to verify if the deployment was successfull.
 
 10. Using [Postman](https://www.postman.com/downloads/) as a REST client, lets generate some images. 
 - Here is the POST request JSON body needed. You can read [more about this here](https://github.com/kiri-art/docker-diffusers-api?tab=readme-ov-file#usage)
+- In this repo you will also find a file `sdxl_api.postman_collection.json`; you can download and import this file inside your postman and run the requests.
+- Be sure to change the `url` field with your own endpoint. Here is a [tutorial on how to import a postman collection](https://www.geeksforgeeks.org/how-to-import-export-collections-in-postman/#1-how-to-importexport-collections-using-the-postman-dashboard)
 ```
 <!-- Request  -->
 {
