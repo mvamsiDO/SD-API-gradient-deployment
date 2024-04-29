@@ -3,7 +3,7 @@ Gradient Deployment spec for running Stable Diffusion API.
 
 This repo will help you spin up a REST API Stable Diffusion Endpoint on [Gradient Deployment](https://www.paperspace.com/deployments).  
 
-The actual [Docker image](https://hub.docker.com/r/gadicc/diffusers-api) being used is created by [Kiri-art-github](https://github.com/kiri-art/docker-diffusers-ap), [kiri.art](https://kiri.art/)
+The actual [Docker image](https://hub.docker.com/r/gadicc/diffusers-api) being used is created by [Kiri-art-github](https://github.com/kiri-art/docker-diffusers-api), [kiri.art](https://kiri.art/)
 
 > Diffusers / Stable Diffusion in docker with a REST API, supporting various models, pipelines & schedulers. Used by kiri.art, perfect for local, server & serverless.
 
